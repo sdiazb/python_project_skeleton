@@ -1,5 +1,7 @@
 # Python Project Skeleton
 
+[![Code Climate](https://codeclimate.com/github/sdiazb/python_project_skeleton/badges/gpa.svg)](https://codeclimate.com/github/sdiazb/python_project_skeleton)
+
 This repository contains a basic skeleton for python projects, so
 new projects can be started quickly following best practices.
 
