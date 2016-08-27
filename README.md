@@ -3,6 +3,11 @@
 This repository contains a basic skeleton for python projects, so
 new projects can be started quickly following best practices.
 
+## Code Quality Standards
+This project contains integration with the following tools in
+order to provide code quality metrics:
+- Code Climate
+
 ## Test
 
 This skeleton is shipped with a dummy module. Tests for this
