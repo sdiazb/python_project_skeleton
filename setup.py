@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
+from setuptools.command.sdist import sdist as _sdist
 
 class Tox(TestCommand):
     user_options = [('tox-args=', 'a', "Arguments to pass to tox")]
@@ -18,6 +19,11 @@ class Tox(TestCommand):
         if args:
             args = shlex.split(self.tox_args)
         tox.cmdline(args=args)
+
+class SDistZip(_sdist):
+    def initialize_options(self):
+        _sdist.initialize_options(self)
+        self.formats = 'zip'
 
 version = '0.0.0'
 github_url = 'https://github.com/sdiazb/python_project_skeleton'
@@ -41,7 +47,8 @@ config = {
     'tests_requires': ['tox', 'nose', 'coverage'],
     'extras_require': {},
     'cmdclass': {
-        'test': Tox
+        'test': Tox,
+        'sdist': SDistZip
     },
     'packages': find_packages(exclude=['docs', 'tests*']),
     'scripts': []
