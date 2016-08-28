@@ -13,8 +13,11 @@ env:
 install:
   - pip install --upgrade pip
   - pip install tox 
+  - pip install codecov
 script:
   - tox -e $TOX_ENV
+after_success:
+  - codecov
 notifications:
   email:
     recipients:
