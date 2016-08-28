@@ -1,0 +1,23 @@
+branches:
+  only:
+  - master
+  - develop
+  - /^feature\/.*$/
+  - /^release\/.*$/
+  - /^hotfix\/.*$/
+language: python
+python:
+  - 2.7
+env:
+  - TOX_ENV=py27
+install:
+  - pip install --upgrade pip
+  - pip install tox 
+script:
+  - tox -e $TOX_ENV
+notifications:
+  email:
+    recipients:
+      - s.diazbautista@gmail.com
+    on_success: change
+    on_failure: always
