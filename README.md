@@ -11,15 +11,36 @@ This project contains integration with the following tools in
 order to provide code quality metrics:
 
 - Code Climate
+- Codecov
+
+## CI
+
+Config files to integrate the skeleton with CI services are also
+provided. The supported CI services are:
+
+- Travis CI
 
 ## Test
 
 This skeleton is shipped with a dummy module. Tests for this
 dummy module are also provided using unittest and mock. The
-full test suite is launched with nose:
+full test suite is launched with nose.
 
 ```
 nosetests
+```
+
+To fully automate testing in this skeleton, tox is used. To launch
+tox you can use:
+
+```
+tox
+```
+
+Or:
+
+```
+python setup.py test
 ```
 
 ## Packaging
@@ -29,6 +50,13 @@ a wheel as follows:
 
 ```
 python setup.py bdist_wheel
+```
+
+Or simply, you can create a source distribution of the skeleton
+in zip format by typing:
+
+```
+python setup.py sdist --format zip
 ```
 
 ## Installing
