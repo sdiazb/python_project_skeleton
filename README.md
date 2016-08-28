@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sdiazb/python_project_skeleton.svg?branch=master)](https://travis-ci.org/sdiazb/python_project_skeleton)
 [![Code Climate](https://codeclimate.com/github/sdiazb/python_project_skeleton/badges/gpa.svg)](https://codeclimate.com/github/sdiazb/python_project_skeleton)
+[![Code Health](https://landscape.io/github/sdiazb/python_project_skeleton/master/landscape.svg?style=flat)](https://landscape.io/github/sdiazb/python_project_skeleton/master)
 [![codecov](https://codecov.io/gh/sdiazb/python_project_skeleton/branch/master/graph/badge.svg)](https://codecov.io/gh/sdiazb/python_project_skeleton)
 
 This repository contains a basic skeleton for python projects, so
@@ -13,7 +14,11 @@ This project contains integration with the following tools in
 order to provide code quality metrics:
 
 - Code Climate
+- Landscape
 - Codecov
+
+The skeleton is shipped with several tools with similar functionalities
+so when forking, you can use your favourite one.
 
 ## CI
 
